@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="data/external/jquery/jquery.js"></script>
+<script src="data/jquery-ui.js"></script>
+<script src="data/checkers_game.js"></script>
+<link rel="stylesheet" href="data/game_style.css">
+<link rel="stylesheet" href="data/jquery-ui.css">
+	<title>Juego Damas Clásico</title>
+</head>
+<body>
+	<div class="container">
+		<div id="game">
+			<h3>
+				<hr class="ui-state-default ui-corner-all">
+				JUEGO DE DAMAS CLÁSICO - 2 JUGADORES
+				<br><br>
+				Jugador Activo: <span id="player_turn">Damas Oscuras</span>
+				<hr class="ui-state-default ui-corner-all">
+			</h3>
+			<br><br>
+			<div class="score_container">
+				<hr class="ui-state-default ui-corner-all">
+				<div class="scores">
+					<b>Puntuación de Jugadores:</b><br><br>
+					<b>Damas Oscuras:</b> <p id="dark_score">0</p>
+					<br>
+					<b>Damas Rojas:</b> <p id="red_score">0</p>
+				</div>
+				<hr class="ui-state-default ui-corner-all">				
+			</div>
+			<div id="board" class="board">
+				
+			</div>
+			<br>
+			<center>
+					<button id="reset" class="ui-button ui-corner-all" onClick="javascript:location.reload();">Restablecer Partida</button>
+			</center>
+		</div>
+		<div></div>
+	</div>
+</body>
+</html>
